@@ -1,0 +1,18 @@
+<form [formGroup]="form3"  >
+
+<div formArrayName="interests">
+
+    <div *ngFor="let interest of interests.controls; let i=index">
+        <!-- The repeated interest template -->
+        <label>
+            Interest {{i + 1 }}:
+            <input type="text" [formControlName]="i">
+        </label>
+    </div>
+
+    <!-- The button for adding another interest -->
+    <button class="btn btn-outline-info btn-sm"
+    (click)="addInterest()">
++ Interest</button>"
+</div>
+</form>
