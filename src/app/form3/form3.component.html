@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <form [formGroup]="form3"  >
 
 <div formArrayName="interests">
@@ -15,4 +16,27 @@
     (click)="addInterest()">
 + Interest</button>"
 </div>
+=======
+<form [formGroup]="form3" (ngSubmit)="onSubmit()"  >
+
+<div formArrayName="interests">
+
+    <div *ngFor="let interest of interests.controls; let i = index">
+        <!-- The repeated interest template -->
+        <label>
+            Interest {{i + 1}}:
+            <input type="text" [formControlName]="i" class="form-control" >
+
+            <div *ngIf="interest.invalid && (interests.controls[i].touched || interest.controls[i].dirty)" class="alert alert-danger">
+                    <div *ngIf="interest.hasError('required')">First Name is required</div>
+                    <div *ngIf="interest.hasError('minlength')">First name has a minimum length</div>
+                    <div *ngIf="interest.hasError('pattern')">Letters a-z onlys</div>
+                </div>
+        </label>
+    </div>
+</div>
+<button class="btn btn-outline-info btn-sm"
+    (click)="addInterest()"  [disabled]="!form3.valid">
++ Interrest </button>
+>>>>>>> f88c4e685a571badc78d1694eaa45ae71df392d5
 </form>

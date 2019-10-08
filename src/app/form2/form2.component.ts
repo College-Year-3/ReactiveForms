@@ -37,7 +37,10 @@ export class Form2Component implements OnInit {
     )
   }
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> f88c4e685a571badc78d1694eaa45ae71df392d5
   ngOnInit() {
   }
 
