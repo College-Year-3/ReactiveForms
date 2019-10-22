@@ -13,6 +13,7 @@ import { ListPeopleComponent } from "./list-people/list-people.component";
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PersonDetailsComponent } from './person-details/person-details.component';
 const routes: Routes = [
   {path: 'form1', component: Form1Component },
   {path: 'ListPeople', component: ListPeopleComponent },
@@ -20,7 +21,7 @@ const routes: Routes = [
   {path: 'Home', component: HomeComponent },
   {path: 'About', redirectTo: '/Home' },
   {path: '**', component: NotFoundComponent, pathMatch: 'full' },
-
+  {path: 'person/:id', component: PersonDetailsComponent}
 ];
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ const routes: Routes = [
     NewForm3Component,
     ListPeopleComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PersonDetailsComponent
       
   ],
   imports: [

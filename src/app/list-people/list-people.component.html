@@ -1,1 +1,5 @@
 <p>list-people works!</p>
+<div *ngIf="currentPerson">
+    <a [routerLink]="['/person', currentPerson.id]"class="btn btn-lg btn-primary"
+    > View details for {{currentPerson.firstName}} </a>
+    </div>
