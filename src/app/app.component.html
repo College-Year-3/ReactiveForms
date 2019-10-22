@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-form1></app-form1>
+  <app-form2></app-form2>
+  <app-form3></app-form3>
+  <app-new-form3></app-new-form3>
+ <app-show-current-users></app-show-current-users>
+  <!-- Edit to pass the first element of the people array into form 3-->
+ 
+  <!-- The first element  -->
+  <form [formGroup]="newForm3" (ngSubmit)="onSubmit()"  >
+
+  <div class="form-group">
+    <label> Person 1</label>
+    <p class="form-control">{{this.people[0]}}</p>
+  </div>
+
+  </form>
+</div>

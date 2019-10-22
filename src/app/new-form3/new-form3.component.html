@@ -1,0 +1,44 @@
+<form [formGroup]="newForm3" (ngSubmit)="onSubmit()"  >
+    <!-- Select which form component to load i.e. form1, 2,.. -->
+    <h1> NEW FORM 3 </h1>
+    <!-- First Name Input Group -->
+    <div class="form-group">
+            <label for="firstname"> First Name : </label>
+            <input id="firstname" type="text" formControlName="firstName" class="form-control">
+    
+            <div *ngIf="firstName.invalid && (firstName.touched || firstName.dirty)" class="alert alert-danger">
+                <div *ngIf="firstName.hasError('required')">First Name is required</div>
+                <div *ngIf="firstName.hasError('minlength')">First name has a minimum length</div>
+                <div *ngIf="firstName.hasError('pattern')">Letters a-z onlys</div>
+            </div>
+        </div>
+    
+        <!-- Second Name Input Group -->
+        <div class="form-group">
+            <label for="lastname">
+                Last Name: </label>
+            <input type="text" id="lastname" formControlName="lastName" class="form-control">
+    
+            <div *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)" class="alert alert-danger">
+                <div *ngIf="lastName.hasError('required')">Surname is required</div>
+                <div *ngIf="lastName.hasError('pattern')">Should begin with z or Z </div>
+            </div>
+        </div>
+    
+        <button class="btn btn-primary" type="submit" [disabled]="!newForm3.valid">Submit</button>
+    
+        <div *ngFor="let p of people">
+            {{p[0].firstName}}
+            {{p[0].lastName}}
+            {{p[0].Interests}}
+        </div>
+        
+    </form>
+    
+    <!-- Just to demonstrate how the acutal form values can be accessed on the template -->
+    <p>{{newForm3.value['firstName']}} {{newForm3.value['lastName']}}</p>
+    
+    <h4>{{firstName.value}}</h4> 
+
+    
+
