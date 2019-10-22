@@ -21,6 +21,7 @@
     "@angular/router": "~8.1.3",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
     "bootstrap": "^4.3.1",
+    "jasmine": "^3.5.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -30,11 +31,7 @@
     "@angular/cli": "^8.1.3",
     "@angular/compiler-cli": "~8.1.3",
     "@angular/language-service": "~8.1.3",
-<<<<<<< HEAD
     "@types/jasmine": "^3.4.4",
-=======
-    "@types/jasmine": "~3.3.8",
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",

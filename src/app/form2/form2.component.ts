@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { FormControl, FormGroup ,  Validators, FormBuilder } from '@angular/forms';
-=======
-import { FormControl, FormGroup ,  Validators } from '@angular/forms';
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
 
 @Component({
   selector: 'app-form2',
@@ -14,50 +10,19 @@ import { FormControl, FormGroup ,  Validators } from '@angular/forms';
 export class Form2Component implements OnInit {
 
   form2 = new FormGroup({
-<<<<<<< HEAD
     firstName: new FormControl('',[Validators.required]),
     lastName: new FormControl('',[Validators.required, Validators.pattern('[z...,Z...]*')])
   });
 
   constructor(private fb: FormBuilder) { 
     
-=======
-    firstName: new FormControl('',[Validators.required, Validators.minLength(5), Validators.pattern('[a-z,A-Z]*')]),
-    lastName: new FormControl('',[Validators.required, Validators.pattern('[z...,Z...]*')])
-  });
-
-  constructor() { 
-    
-    // this.firstName.valueChanges.subscribe(
-      
-    //   (value: string) => {
-    //     console.log('firstname changed to :', value);
-
-    //   }
-    // )
-    // this.lastName.valueChanges.subscribe(
-      
-    //   (value: string) => {
-    //     console.log('Surname changed to :', value);
-
-    //   }
-    // )
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
     this.form2.valueChanges.subscribe(
       (value: string) => {
         console.log( 'Something has been changed !');
       }
     )
   }
-<<<<<<< HEAD
-  
-=======
 
-<<<<<<< HEAD
-  
-=======
->>>>>>> f88c4e685a571badc78d1694eaa45ae71df392d5
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
   ngOnInit() {
   }
 

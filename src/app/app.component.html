@@ -1,26 +1,23 @@
-<<<<<<< HEAD
-=======
-<!--This content is to test the ng-bootstrap-->
-<div class="jumbotron">
-  <div class="container">
-    <ngb-alert type="success" [dismissible]="false">
-      Bootstrap is working!
-    </ngb-alert>
-  </div>
-</div>
-
-  
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
 <div class="container">
   <h1>
     Welcome to {{ title }}!
   </h1>
-<<<<<<< HEAD
   <app-form1></app-form1>
   <app-form2></app-form2>
   <app-form3></app-form3>
   <app-new-form3></app-new-form3>
  <app-show-current-users></app-show-current-users>
+
+ <nav>
+  <ul>
+    <li><a routerLink="/form1">Go to Form1</a></li>
+    <li><a routerLink="/ListPeople">List all the people</a></li>
+    <li><a routerLink="/Home">Home</a></li>
+    <li><a routerLink="/About">About</a></li>
+
+  </ul>
+</nav>
+ <router-outlet></router-outlet>
   <!-- Edit to pass the first element of the people array into form 3-->
  
   <!-- The first element  -->
@@ -33,11 +30,3 @@
 
   </form>
 </div>
-=======
-  <app-form2></app-form2>
-  <app-form3></app-form3>
-
-</div>
-
-
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3

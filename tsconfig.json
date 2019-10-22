@@ -10,11 +10,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-<<<<<<< HEAD
     "target": "ES6",
-=======
-    "target": "es2015",
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
     "typeRoots": [
       "node_modules/@types"
     ],

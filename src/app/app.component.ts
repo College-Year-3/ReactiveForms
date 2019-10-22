@@ -1,18 +1,13 @@
-<<<<<<< HEAD
 import { Component, Input } from '@angular/core';
 import { Person2 } from '../app/Model/Person2';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
-=======
-import { Component } from '@angular/core';
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-<<<<<<< HEAD
 
 export class AppComponent {
   title = ' Una\'s Lovely Forms';
@@ -40,8 +35,4 @@ export class AppComponent {
   handlePersonSelected(person: Person2){
     console.log('Person selected', person);
   }
-=======
-export class AppComponent {
-  title = ' Una\'s Lovely Forms';
->>>>>>> 54ad3d49d2665a183f5d4caeb45528d778ba0ac3
 }
